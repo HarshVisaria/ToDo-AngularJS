@@ -1,0 +1,8 @@
+<div class="container my-1">
+<p [ngClass]="{'strike' : !passedTodo.active}">{{passedTodo.title}}</p>
+<p [ngClass]="{'strike' : !passedTodo.active}">{{passedTodo.desc}}</p>
+<button class="btn btn-sm btn-danger" (click)="deleteClicked(passedTodo)">Delete the Todo</button><br>
+<input type="checkbox" id="checkbox" (click)="checkBoxClick(passedTodo)" [checked]="!passedTodo.active">
+<label>Click here to mark Todo as Done</label>
+<div class="h-divider"></div>
+</div>

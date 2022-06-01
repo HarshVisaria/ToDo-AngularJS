@@ -1,0 +1,7 @@
+<div class="container my-3">
+<form (ngSubmit)="submitDetails()">
+    <p><input type="text" name="title" [(ngModel)]="title" id="title" placeholder="Enter the title"></p>
+    <p><input type="text" name="desc" [(ngModel)]="desc" id="desc" placeholder="Enter the desc"></p>
+    <button class="btn btn-primary btn-sm">Add the Todo</button>
+</form>
+</div>

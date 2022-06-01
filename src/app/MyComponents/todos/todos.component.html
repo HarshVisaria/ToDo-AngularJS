@@ -1,0 +1,9 @@
+<app-add-todo (sendTodo)="addTodo($event)"></app-add-todo>
+<div *ngIf="this.todos.length===0; else elseBlock">No todo's present</div>
+
+<ng-template #elseBlock>
+    <div *ngFor="let todo of todos">
+        <app-todo-item [passedTodo]="todo" (todoDelete)="deleteTodo($event)" (checkBoxTrigger)="checkBox($event)"></app-todo-item>
+        <!-- {{todo.sno}} - {{todo.title}} - {{todo.desc}} -->
+    </div>
+</ng-template>

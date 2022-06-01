@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">About Todo</h5>
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis repellat iure.</p>
+    <a routerLink="/" class="btn btn-primary">Go back to ToDo!</a>
+  </div>
+</div>
+
+<div>
+  <h1>Learning Pipes</h1>
+  <h3>{{string1 | lowercase}}</h3>
+  <h3>{{string2 | uppercase}}</h3>
+  <h3>{{string3 | titlecase}}</h3>
+  <h3>{{string4 | slice:0:5}}</h3>
+  <h3>{{class5 | json}}</h3>
+
+  <h3>{{1.2345 | number : '1.2-3'}}</h3>
+  <h3>{{1.2345 | number : '3.2-6'}}</h3>
+  <h3>{{1.2345 | number : '4.1-2'}}</h3>
+
+  <h3>{{0.99 | percent}}</h3>
+
+  <h3>{{date | date: 'short' }}</h3>
+  <h3>{{date | date: 'mediumDate' }}</h3>
+  <h3>{{date | date: 'shortTime' }}</h3>
+  <h3></h3>
+</div>
